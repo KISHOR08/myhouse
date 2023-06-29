@@ -1,0 +1,157 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .links ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-right: 10px;
+  }
+  
+  .links a{
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .action_btn {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+  }
+
+    
+
+.property-type{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+    
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.info{
+display: grid;
+grid-template-columns: 48% 48%;
+gap: 4%
+
+
+}
+.info .left,
+.info .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.location{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: repeat(2, 1fr);
+ gap: 10px;
+ margin-bottom: 20px;
+}
+.location.input-field{
+    flex-grow: 1;
+}
+
+
+.input-field input{
+  height: 30px;
+  border-radius: 5px;
+}
+.choose{
+    display: flex;
+    align-items: center;
+}
+.input-field textarea{
+    resize: none;
+}
+.listing{
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 20px;
+   gap: 20px;
+
+  
+}
+.listing .input-field{
+    width: 50%;
+}
+.btn1 button{
+    width: 25%;
+
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.upload{
+ width: 100%;
+
+
+display: flex;
+flex-direction: column;
+}
+.upload input{
+    width: 100%;
+}
+.input-field label{
+ 
+  font-weight: bold;
+}
+.input-field span{
+  font-weight: bold;
+
+}
+textarea{
+  border-radius: 5px;
+
+}
+.choose label{
+  font-weight: lighter;
+}
+em{
+  color: red;
+}
+.optional{
+  color: black;
+}

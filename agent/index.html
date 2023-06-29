@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>AddProperty</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-bar">
+                <div class="logo">
+                    <h2>MyHouse</h2>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#Dashboard">Dashboard</a></li>
+                        <li><a href="#AddProperty">Add Property</a></li>
+                        <li><a href="#SoldProperty">Sold Property</a></li>
+                        <li><a href="#MyProperty">My Property</a></li>
+                        <li><a href="#EditProfile">Edit Profile</a></li>
+                        <li><a href="#Message">Message</a></li>
+                        <li><a href="#Notification">Notification</a></li>
+                        <li><a href="#Logout">Logout</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+
+        <form action="#">
+            <div class="form-add">
+                <div class="add-property">
+                    <span class="title">Add Property</span>
+                </div>
+                <div class="field">
+                    <div class="input-field">
+                        <label for="Ttile">Title</label>
+                        <input type="text" placeholder="Enter Title" id="title" name="title" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="description">Description</label>
+                        <textarea name="discription" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-field">
+                        <label for="category">Category</label>
+                        <input list="category" name="category" required>
+                        <datalist id="category">
+                            <option value="Buy">Buy</option>
+                            <option value="Sale">Sale</option>
+                        </datalist>
+                        
+                    </div>
+                    <div class="input-field">
+                        <span>Property Type</span>
+                        <div class="property-type">
+                            <div class="left">
+                                <div class="choose">
+                                    <input type="radio" id="house" name="property Type" value="House">
+                                    <label for="house">House</label>
+                                </div>
+                                <div class="choose">
+                                    <input type="radio" id="land" name="property Type" value="Land">
+                                    <label for="land">Land</label>
+                                </div>
+                                <div class="choose">
+                                    <input type="radio" id="commercialLand" name="porproperty Type"
+                                        value="Commercial Land">
+                                    <label for="commercialLand">Commercial Land</label>
+                                </div>
+                                <div class="choose">
+                                    <input type="radio" id="HandR" name="property Type" value="Hotel and Resturant">
+                                    <label for="HandR">Hotel and Resturant</label>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="choose">
+                                    <input type="radio" id="apartment" name="property Type" value="Apartment and Flat">
+                                    <label for="apartment">Apartment and Flat</label>
+                                </div>
+                                <div class="choose">
+                                    <input type="radio" id="commercialOfficeSpace" name="property Type"
+                                        value="Commercial Office Space">
+                                    <label for="commercialOfficeSpace">Commercial Office Space</label>
+                                </div>
+                                <div class="choose">
+                                    <input type="radio" id="commercialBuilding" name="property Type"
+                                        value="Commercial Building">
+                                    <label for="commercialBuilding">Commercial Building</label>
+                                </div>
+                                <div class="choose">
+                                    <input type="radio" id="shop" name="property Type" value="Shop">
+                                    <label for="shop">Shop</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <div class="left">
+                            <div class="input-field">
+                                <label for="room">Rooms <em class="optional">(optional)</em></label>
+                                <input type="text" id="room" name="room" placeholder="Enter Number of Room">
+                            </div>
+                            <div class="input-field">
+                                <label for="bedroom">Bed Room <em class="optional">(optional)</em></label>
+                                <input type="text" id="bedroom" name="bedroom" placeholder="Enter Number of Bed Room">
+                            </div>
+                            <div class="input-field">
+                                <label for="bathroom">Bathroom <em>(optional)</em></label>
+                                <input type="text" id="bathroom" name="bathroom" placeholder="Enter Number of Bathroom">
+                            </div>
+                            <div class="input-field">
+                                <label for="totalArea">Total Area</label>
+                                <input type="text" id="totalArea" name="totalArea"
+                                    placeholder="Enter Number Total Area">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="input-field">
+                                <label for="room">Rooms <em class="optional">(optional)</em></label>
+                                <input type="text" id="room" name="room" placeholder="Enter Number of Room">
+                            </div>
+                            <div class="input-field">
+                                <label for="parking">Parking<em class="optional">(optional)</em></label>
+                                <input type="text" id="parking" name="parking" >
+                            </div>
+                            <div class="input-field">
+                                <label for="bathroom">Bathroom <em class="optional">(optional)</em></label>
+                                <input type="text" id="bathroom" name="bathroom" placeholder="Enter Number of Bathroom">
+                            </div>
+                            <div class="input-field">
+                                <label for="totalArea">Total Price<em>*</em></label>
+                                <input type="text" id="totalArea" name="totalArea"
+                                    placeholder="Enter Number Total Area">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="location">
+
+                        <div class="input-field">
+                            <label for="province">Province<em>*</em></label>
+                            <input list="province" name="province" required>
+                            <datalist id="province">
+                                <option value="Province 1">
+                                <option value="Province 2">
+                                <option value="Province 1">
+                                <option value="Province 2">
+                                <option value="Province 1">
+                                <option value="Province 2">
+                                <option value="Province 7">
+                            </datalist>
+
+                        </div>
+                        <div class="input-field">
+                            <label for="district">District<em>*</em></label>
+                            <input type="text" id="district" name="district" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="localBody">Local Body</label>
+                            <input type="text" id="localBody" name="localBody" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label for="ward">Ward</label>
+                            <input type="text" id="ward" name="ward" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="tole">Tole</label>
+                            <input type="text" id="tole" name="tole" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.27776858391!2d85.28493311415471!3d27.709030241650545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1686886061812!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="listing">
+                        <div class="input-field">
+                            <label for="pListing">Property Listing Type</label>
+                            <input type="text" id="lPrice" name="lPrice" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="lPrice">Listing Price</label>
+                            <input type="text"  id="lPrice" name="lPrice" required>
+                        </div>
+                    </div>
+                    <div class="upload">
+                        <label for="uploadImg">Upload Image </label>
+                        <input type="file" id="uploadImg" name="uploadImg" multiple>
+                    </div>
+                    <div class="btn1">
+                        <button>submit</button>
+                    </div>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
